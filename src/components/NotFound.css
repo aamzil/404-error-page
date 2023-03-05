@@ -1,0 +1,115 @@
+.notfound {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 7%;
+    align-items: center;
+}
+
+.notfound__img {
+    display: grid;
+    place-items: center;
+    width: 50%;
+    animation: float 2s infinite;
+    transform: translateY(-1%);
+}
+
+.notfound__message {
+    display: grid;
+    place-items: center;
+    width: 50%;
+    text-align: center;
+}
+
+.notfound__message h1 {
+    font-family: 'magisho', sans-serif;
+    font-size: 140px;
+    color: #111;
+}
+
+.notfound__message h3 {
+    font-family: 'Product Sans Infanity', sans-serif;
+    font-size: 28px;
+    color: #a54d40;
+
+}
+
+.notfound__message p {
+    font-family: 'Product Sans Infanity', sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    padding-top: 5px;
+}
+
+.button {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Product Sans Infanity', sans-serif;
+    background-color: inherit;
+    margin-top: 40px;
+    padding: 12px 13px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid #111;
+}
+
+.button:hover {
+    transition: all ease 0.3s;
+    background-color: #da9656d3;
+}
+
+
+.button .leftarrow {
+    font-size: 22px;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(-1%);
+        transition: ease 1s;
+    }
+
+    50% {
+        transform: translateY(1%);
+        transition: ease 1s;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .notfound {
+        display: grid;
+        place-content: center;
+        padding-bottom: 60px;
+    }
+
+    .notfound__img,
+    .notfound__message {
+        width: 100%;
+    }
+
+    .notfound__img {
+        padding-top: 50px;
+    }
+
+    .notfound__img img {
+        width: 100%;
+    }
+
+    .notfound__message {
+        padding-top: 30px;
+    }
+
+    .notfound__message h1 {
+        font-size: 120px;
+    }
+
+    .notfound__message h3 {
+        font-size: 24px;
+    }
+
+    .notfound__message p {
+        font-size: 18px;
+    }
+}
